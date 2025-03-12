@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Stop any running Next.js server
+echo "Stopping any running Next.js server..."
+pkill -f "node.*next"
+
+# Clear Next.js cache
+echo "Clearing Next.js cache..."
+rm -rf .next/cache
+
+# Start the development server
+echo "Starting development server with updated environment variables..."
+npm run dev
