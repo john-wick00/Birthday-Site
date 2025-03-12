@@ -12,13 +12,21 @@ const Gift = dynamic(() => import('@/components/Gift'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
 const MusicPlayer = dynamic(() => import('@/components/MusicPlayer'), { ssr: false });
 const VisualEffects = dynamic(() => import('@/components/VisualEffects'), { ssr: false });
+const AnimatedBackground = dynamic(() => import('@/components/AnimatedBackground'), { ssr: false });
+const PhotoGallery = dynamic(() => import('@/components/PhotoGallery'), { ssr: true });
+const Timeline = dynamic(() => import('@/components/Timeline'), { ssr: true });
+const InteractiveMessage = dynamic(() => import('@/components/InteractiveMessage'), { ssr: false });
 
 export default function Home() {
   return (
     <main>
+      <AnimatedBackground />
       <Header />
       <Countdown />
+      <InteractiveMessage />
       <Memories />
+      <PhotoGallery />
+      <Timeline />
       <Wishes />
       <Gift />
       <Footer />
