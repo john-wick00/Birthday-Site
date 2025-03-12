@@ -13,6 +13,28 @@ export const HEADER_MESSAGE = "To the most Awesome person in my life. Today is a
 // Custom message for the gift section
 export const GIFT_MESSAGE = "You mean the world to me. Thank you for being the amazing person you are.";
 
+// Background Music Options
+export const BACKGROUND_MUSIC = [
+  {
+    id: 1,
+    title: "Happy Birthday Song",
+    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", // Replace with actual birthday song URL
+    loop: true
+  },
+  {
+    id: 2,
+    title: "Cheerful Celebration",
+    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", // Replace with actual celebration song URL
+    loop: true
+  },
+  {
+    id: 3,
+    title: "Romantic Melody",
+    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3", // Replace with actual romantic song URL
+    loop: true
+  }
+];
+
 // Memory Images
 export const MEMORIES = [
   {

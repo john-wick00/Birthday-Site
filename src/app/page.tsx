@@ -10,6 +10,8 @@ const Memories = dynamic(() => import('@/components/Memories'), { ssr: true });
 const Wishes = dynamic(() => import('@/components/Wishes'), { ssr: true });
 const Gift = dynamic(() => import('@/components/Gift'), { ssr: true });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: true });
+const MusicPlayer = dynamic(() => import('@/components/MusicPlayer'), { ssr: false });
+const VisualEffects = dynamic(() => import('@/components/VisualEffects'), { ssr: false });
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <Wishes />
       <Gift />
       <Footer />
+      <MusicPlayer />
+      <VisualEffects />
     </main>
   );
 } 
